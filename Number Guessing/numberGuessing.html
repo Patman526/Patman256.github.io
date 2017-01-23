@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel=stylesheet type="text/css" href="numberGuessing.css">
+		<title>Number Guessing Game</title>
+		<script src="numberGuessing.js">
+		</script>
+	</head>
+	<body onLoad="startGame()">
+			Game Mode:<form>
+			Normal <input type=radio name=mode value=Normal id=idModeNormal checked><br>
+			Endless <input type=radio name=mode value=Endless><br><br>
+			Your guess:<br>
+			<input type=text id=idGuess><br><br>
+			<input type=button value=Guess onClick="checkAnswer()">
+			<input type=button value=Restart onClick="restartGame()"><br><br><br>
+			<div id=idDivInfo></div>
+			<input type=button value="Data" onClick="showData()"><br><br>
+			<div id=idDivData></div>
+		</form>
+	</body>
+</html>
